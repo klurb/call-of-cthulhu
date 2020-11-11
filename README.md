@@ -2,7 +2,7 @@
 Text adventure inspired by [H. P. Lovecraft](https://en.wikipedia.org/wiki/H._P._Lovecraft) short story [Call of Cthulhu](https://en.wikipedia.org/wiki/The_Call_of_Cthulhu)
 The game uses the [advenjure](https://github.com/facundoolano/advenjure) engine.
 
-A WIP version will be playable online (todo...) .
+A WIP version will be playable online [here](https://github.com/klurb/call-of-cthulhu/resources/public/index.html) .
 
 ## Usage
 
