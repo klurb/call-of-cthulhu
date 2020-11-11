@@ -22,8 +22,8 @@
 (def put-against (make-compound-item-handler "put" :put-against))
 
 (defn jump [game-state]
-  (if (= :west-passage (:current-room game-state))
-    (utils/say "No use, I still couldn't climb the window.")
+  (if (= :bedroom (:current-room game-state))
+    (utils/say "Be careful, do not break the bed...")
     (utils/say "Hop!")))
 
 (def reach (make-item-handler "reach" :reach
@@ -55,7 +55,7 @@
                              "^turn on (?<item1>.*) with$"] light-with)))
 
 (def init-text (str "\nPh'nglui mglw'nafh Cthulhu R'lyeh wgah'nagl fhtagn"
-                    "\nIn his house at R'lyeh, dead Cthulhu waits dreaming."
+                    "\n(In his house at R'lyeh, dead Cthulhu waits dreaming.)"
                     ))
 
 (def game-state (-> (game/make room-map :R'lyeh)
@@ -66,12 +66,12 @@
 (defn finished?
   "Finish when arriving in bedroom for the moment."
       [gs]
-  (let [key-set (utils/find-first gs "hammer")]
-    (and key-set (= (:current-room gs) :bedroom))))
+  (let [key-set (utils/find-first gs "statue")]
+    (and key-set (= (:current-room gs) :end))))
 
 (defn run-game []
   (game/run game-state
             finished?
             :start-message init-text
-            :end-message "I woke up...\n  \n  \nThe End."
+            :end-message "It is the apocalypse\n  \n  \nThe End?"
             :verb-map verb-map))
