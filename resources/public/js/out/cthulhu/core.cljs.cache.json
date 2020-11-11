@@ -1,0 +1,1 @@
+["^ ","~:rename-macros",["^ "],"~:renames",["^ "],"~:use-macros",["^ "],"~:excludes",["~#set",[]],"~:name","~$cthulhu.core","~:imports",null,"~:requires",["^ ","~$cthulhu.game","^9"],"~:uses",["^ ","~$run-game","^9"],"~:require-macros",null,"~:doc",null]

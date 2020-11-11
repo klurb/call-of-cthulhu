@@ -1,0 +1,1 @@
+{"version":3,"file":"\/Users\/mathieubollore\/code\/call-of-cthulhu\/resources\/public\/js\/out\/cthulhu\/core.js","sources":["core.cljs?rel=1605080729333"],"lineCount":8,"mappings":";AAAA;;;AAGA,AAACA;AACD,AAACC","names":["cljs.core\/enable-console-print!","cthulhu.game\/run-game"]}
